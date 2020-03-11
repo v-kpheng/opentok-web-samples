@@ -26,8 +26,12 @@ session.on({
   }
 });
 
+const publisherOptions = {
+  _enableSimulcast: true,
+};
+
 // Create a publisher
-const publisher = OT.initPublisher('publisher', (initError) => {
+const publisher = OT.initPublisher('publisher', publisherOptions, (initError) => {
   if (initError) {
     console.error(`There was an error initializing the publisher: ${initError}`);
   }
