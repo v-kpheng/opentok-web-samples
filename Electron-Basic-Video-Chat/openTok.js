@@ -28,6 +28,9 @@ session.on({
 
 const publisherOptions = {
   _enableSimulcast: true,
+  height: '100%',
+  insertMode: 'append',
+  width: '100%',
 };
 
 // Create a publisher
