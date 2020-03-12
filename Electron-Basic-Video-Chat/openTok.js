@@ -15,7 +15,12 @@ const session = OT.initSession(apiKey, sessionId);
 // Set session event listeners
 session.on({
   streamCreated: (event) => {
-    session.subscribe(event.stream, 'subscriber', (error) => {
+    const subscriberOptions = {
+      height: '100%',
+      width: '100%',
+    };
+
+    session.subscribe(event.stream, 'subscriber', subscriberOptions, (error) => {
       if (error) {
         console.error(`There was an issue subscribing to the stream: ${error}`);
       }
