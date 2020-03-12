@@ -6,8 +6,32 @@
     <link href="app.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div id="publisher"></div>
-    <div id="subscriber"></div>
+    <div id="app">
+      <div class="home">
+        <div data-v-a7518ae0 class="v-meetings">
+          <div data-v-a7518ae0 class="main-app">
+            <div data-v-a7518ae0 data-v-64af7a84 class="main-screen">
+              <div data-v-64af7a84 class="screen-wrapper">
+                <div data-v-70f04408 data-v-64af7a84 class="video-streams">
+                  <div data-v-70f04408 class="streams">
+                    <div data-v-73585b97 data-v-70f04408 class="stream video-stream main-stream">
+                      <div data-v-73585b97 class="video-container">
+                        <div data-v-73585b97 id="subscriber" class="video-element"></div>
+                      </div>
+                    </div>
+                    <div data-v-73585b97 data-v-70f04408 class="stream video-stream">
+                      <div data-v-73585b97 class="video-container">
+                        <div data-v-73585b97 id="publisher" class="video-element"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script>
       require('./openTok.js')
     </script>
