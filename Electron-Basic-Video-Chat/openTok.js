@@ -38,24 +38,24 @@ const publisherOptions = {
   width: '100%',
 };
 
-// Create a publisher
-const publisher = OT.initPublisher('publisher', publisherOptions, (initError) => {
-  if (initError) {
-    console.error(`There was an error initializing the publisher: ${initError}`);
-  }
-});
+// // Create a publisher
+// const publisher = OT.initPublisher('publisher', publisherOptions, (initError) => {
+//   if (initError) {
+//     console.error(`There was an error initializing the publisher: ${initError}`);
+//   }
+// });
 
-// Connect to the session
-session.connect(token, (error) => {
-  // If the connection is successful, initialize a publisher and publish to the session
-  if (error) {
-    console.error(`There was an error connecting to session: ${error}`);
-    publisher.destroy();
-    return;
-  }
-  session.publish(publisher, (pubError) => {
-    if (pubError) {
-      console.error(`There was an error when trying to publish: ${pubError}`);
-    }
-  });
-});
+// // Connect to the session
+// session.connect(token, (error) => {
+//   // If the connection is successful, initialize a publisher and publish to the session
+//   if (error) {
+//     console.error(`There was an error connecting to session: ${error}`);
+//     publisher.destroy();
+//     return;
+//   }
+//   session.publish(publisher, (pubError) => {
+//     if (pubError) {
+//       console.error(`There was an error when trying to publish: ${pubError}`);
+//     }
+//   });
+// });
